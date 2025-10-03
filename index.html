@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Web Developer Portfolio - Showcasing modern web development projects and skills">
+    <meta name="keywords" content="web developer, portfolio, frontend, backend, full stack">
+    <meta name="author" content="Your Name">
+    <title>Vishal Patel - Web and AI/ML Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <span class="logo-bracket">&lt;</span>
+                Vishal Patel
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section class="hero section" id="home">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Hi, I'm <span class="gradient-text">Vishal Patel</span>
+                </h1>
+                <div class="hero__subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero__description">
+                    I am a beginner with building intelligent, user-centric web applications by integrating robust machine learning models with modern, responsive front-end architectures. Eager to develop full-stack AI solutions that are both powerful and accessible.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Get In Touch
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="hero__socials">
+                    <a href="https://github.com/VishalBunny07" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vishal-patel-01937b31b/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://codepen.io" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="CodePen">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=918758477082&text=hey%2C%20its%20me%20MR.Bunny" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://discord.gg/43NquNYV" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    
+                    <a href="https://msng.link/o/?8758477082=tg" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__blob">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.3C64.8,55.4,53.8,67,40.3,74.5C26.8,82,13.4,85.4,-0.5,86.3C-14.4,87.2,-28.8,85.6,-42.3,78.9C-55.8,72.2,-68.4,60.4,-76.8,46.1C-85.2,31.8,-89.4,15.9,-88.7,0.5C-88,-14.9,-82.4,-29.8,-74.3,-43.5C-66.2,-57.2,-55.6,-69.7,-42.4,-77.3C-29.2,-84.9,-14.6,-87.6,0.3,-88.1C15.2,-88.6,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+                    </svg>
+                </div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='300' height='300' fill='%236366f1'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='24' fill='white'%3EWelcome To My Portfolio%3C/text%3E%3C/svg%3E" alt="Welcome" class="hero__img">
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#about" class="scroll-down">
+                <span class="scroll-text">Scroll Down</span>
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+    
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section__title">About Me</h2>
+            <p class="section__subtitle">Get to know me better</p>
+
+            <div class="about__container">
+                <div class="about__image">
+                    <div class="about__img-wrapper glass-card">
+                        <a href="https://freeimage.host/"><img src="https://iili.io/KWBi0q7.png" alt="KWBi0q7.png" border="0"></a>
+                    </div>
+                </div>
+
+                <div class="about__content">
+                    <div class="about__text glass-card">
+                        <h3 class="about__subtitle">Full Stack Web Developer</h3>
+                        <p class="about__description">
+                            With over 5 years of experience in web development, I specialize in creating dynamic, 
+                            responsive, and user-friendly applications. My passion lies in transforming complex 
+                            problems into simple, beautiful, and intuitive designs.
+                        </p>
+                      <h3 class="about__subtitle">Aspiring AI/ML Engineer</h3>
+                        <p class="about__description">
+                             Passionate about building intelligent systems and solving complex problems through machine learning. 
+                            Currently developing my skills in Python, data analysis, and ML algorithms while eager to contribute 
+                            to meaningful AI projects and grow within innovative tech teams.
+                        </p>
+
+                        <div class="about__info">
+                            <div class="about__box">
+                                <i class="fas fa-award"></i>
+                                <h4>Experience</h4>
+                                <span>4+ Years</span>
+                            </div>
+                            <div class="about__box">
+                                <i class="fas fa-briefcase"></i>
+                                <h4>Projects</h4>
+                                <span>10+ Completed</span>
+                            </div>
+                            <div class="about__box">
+                                <i class="fas fa-headset"></i>
+                                <h4>Support</h4>
+                                <span>24/7 Available</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-primary download-cv">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section__title">My Projects</h2>
+            <p class="section__subtitle">Check out my recent work</p>
+
+            <div class="projects__filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Machine learning</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <div class="projects__container">
+    
+                <article class="project__card glass-card" data-category="web">
+                    <div class="project__image">
+                        <img src="https://raw.githubusercontent.com/VishalBunny07/breast-cancer-analysis/refs/heads/main/Data%20Analysis%20on%20Breast%20cancer/Charts%20and%20Graphs%20images/13.png" alt="Data Analysis" class="project__img">
+                        <div class="project__overlay">
+                            <button class="project__btn preview-btn" data-project="1">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="#" class="project__btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Data Analysis</h3>
+                        <p class="project__description">
+                            This repository holds a thorough project aimed at data analysis and data visualization with Python for Breast Cancer Analysis. It demonstrates methods and tools for data cleaning, data exploration, data analysis, and visualization to derive valuable insights.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Jupyter Notebook</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Numpy</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">seaborn</span>
+                        </div>
+                    </div>
+                </article>
+
+    
+                <article class="project__card glass-card" data-category="mobile">
+                    <div class="project__image">
+                        <img src="https://private-user-images.githubusercontent.com/131268343/435354505-12577209-d2eb-4141-8c62-b87bb2f6bc42.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk0MTYyMjQsIm5iZiI6MTc1OTQxNTkyNCwicGF0aCI6Ii8xMzEyNjgzNDMvNDM1MzU0NTA1LTEyNTc3MjA5LWQyZWItNDE0MS04YzYyLWI4N2JiMmY2YmM0Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwMlQxNDM4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNDBmY2IzNGNiNTI4YzEyZmYzNmFjNTc0MjRhNTg3M2QzNDQ1NzM4YjA3NWQ4MWExYzEyMjE5ZWM1ZDY5Y2M5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.cubjwckEo4RgvHCxhyesgEXVvMT21Axi00R4EpQEM2Q" alt="Recipe App" class="project__img">
+                        <div class="project__overlay">
+                            <button class="project__btn preview-btn" data-project="2">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="#" class="project__btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Recipe App</h3>
+                        <p class="project__description">
+                            A simple and intuitive Android recipe application built with Android Studio that helps users discover, save, and share delicious recipes.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Android Studio</span>
+                            <span class="tag">Java</span>
+                            
+                        </div>
+                    </div>
+                </article>
+
+    
+                <article class="project__card glass-card" data-category="web">
+                    <div class="project__image">
+                        <img src="https://private-user-images.githubusercontent.com/131268343/497163736-6006087c-ae39-4280-8197-c75232dea47d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk0OTk4MDUsIm5iZiI6MTc1OTQ5OTUwNSwicGF0aCI6Ii8xMzEyNjgzNDMvNDk3MTYzNzM2LTYwMDYwODdjLWFlMzktNDI4MC04MTk3LWM3NTIzMmRlYTQ3ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwM1QxMzUxNDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mY2UwZjZiZjZiMzM1YzE2OTQwMjFiNTIyZDk2ZDk3MzAyNjI5ZTA0NzFjMWNlYTVhMmUxYjEzY2VmZmNkM2I2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.5Rt7Ws9iYdVHcKGHhPPcOmL6e8EK8nMPcTBf0pMi4GE" alt="Personality Traits" class="project__img">
+                        <div class="project__overlay">
+                            <button class="project__btn preview-btn" data-project="3">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="#" class="project__btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Personality Type Predictor</h3>
+                        <p class="project__description">
+                            A machine learning web application that classifies personality types (Introvert/Extrovert/Ambivert) using Streamlit and trained classification models. Users input psychological trait scores to get instant personality predictions with confidence scores.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">python</span>
+                            <span class="tag">Jupyter Notebook</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Seaborn</span>
+                            <span class="tag">Scikit Learn</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                    </div>
+                </article>
+
+    
+                <article class="project__card glass-card" data-category="design">
+                    <div class="project__image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cdefs%3E%3ClinearGradient id='grad4' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ec4899;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%236366f1;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='400' fill='url(%23grad4)'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='32' fill='white'%3EPortfolio Website%3C/text%3E%3C/svg%3E" alt="Portfolio Website" class="project__img">
+                        <div class="project__overlay">
+                            <button class="project__btn preview-btn" data-project="4">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="#" class="project__btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Creative Portfolio Website</h3>
+                        <p class="project__description">
+                            Modern, animated portfolio website featuring advanced CSS animations, 
+                            smooth transitions, and an immersive user experience.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox__content">
+            <button class="lightbox__close">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="Project preview" class="lightbox__img">
+            <div class="lightbox__caption"></div>
+        </div>
+    </div>
+
+    
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section__title">My Skills</h2>
+            <p class="section__subtitle">Technologies I work with</p>
+
+            <div class="skills-grid">
+                <div class="skill-card animate" style="transition-delay: 0.1s;">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 0.2s;">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 0.3s;">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Development</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 0.5s;">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 0.6s;">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 0.7s;">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML &amp; CSS</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 0.8s;">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Analysis</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 0.9s;">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>NumPy &amp; Pandas</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 1s;">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>TensorFlow</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 1.1s;">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Tkinter</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 1.2s;">
+                    <i class="fab fa-android"></i>
+                    <h3>Android Studio</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 1.3s;">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git &amp; GitHub</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 1.4s;">
+                    <i class="fas fa-code"></i>
+                    <h3>Scikit-learn</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 1.5s;">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Neural Networks</h3>
+                </div>
+                <div class="skill-card animate" style="transition-delay: 1.6s;">
+                    <i class="fas fa-search"></i>
+                    <h3>OpenCV</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section__title">Get In Touch</h2>
+            <p class="section__subtitle">Let's work together</p>
+
+            <div class="contact__container">
+                <div class="contact__info">
+                    <div class="contact__card glass-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>vp709523@gmail.com</p>
+                        <a href="mailto:vp709523@gmail.com" class="contact__button">
+                            Send Email <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact__card glass-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Rajkot,Gujarat,India</p>
+                        <a href="#" class="contact__button">
+                            View Map <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact__card glass-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 87584 77082</p>
+                        <a href="tel:+91 87584 77082" class="contact__button">
+                            Call Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact__form glass-card" id="contact-form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form__input" placeholder="Enter your name" required>
+                        <span class="form__error"></span>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form__input" placeholder="Enter your email" required>
+                        <span class="form__error"></span>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="subject" class="form__label">Subject *</label>
+                        <input type="text" id="subject" name="subject" class="form__input" placeholder="Enter subject" required>
+                        <span class="form__error"></span>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="message" class="form__label">Message *</label>
+                        <textarea id="message" name="message" class="form__input form__textarea" placeholder="Enter your message" rows="5" required></textarea>
+                        <span class="form__error"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span class="btn__text">Send Message</span>
+                        <span class="btn__loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+
+                    <div class="form__message" style="display: none;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <a href="#home" class="footer__logo">
+                        Vishal Patel
+                    </a>
+                    <p class="footer__description">
+                        Building digital experiences that make a difference. 
+                        Let's create something amazing together.
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#projects" class="footer__link">Projects</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Connect</h3>
+                    <div class="footer__socials">
+                        <a href="https://github.com/VishalBunny07" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vishal-patel-01937b31b/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://codepen.io" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="CodePen">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+
+                        <a href="https://api.whatsapp.com/send?phone=918758477082&text=hey%2C%20its%20me%20MR.Bunny" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                        <a href="https://discord.gg/43NquNYV" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    
+                        <a href="https://msng.link/o/?8758477082=tg" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2025 Vishal Patel. All rights reserved. Made with 
+                    <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
