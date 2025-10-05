@@ -1,6 +1,6 @@
 'use strict';
 
-// GLOBAL VARIABLES & DOM ELEMENTS
+
 const header = document.getElementById('header');
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
@@ -20,14 +20,13 @@ const lightboxClose = lightbox.querySelector('.lightbox__close');
 const previewBtns = document.querySelectorAll('.preview-btn');
 
 
-// LOADING SCREEN
 window.addEventListener('load', () => {
     setTimeout(() => {
         loadingScreen.classList.add('hidden');
     }, 1000);
 });
 
-// CUSTOM CURSOR
+
 const cursor = document.querySelector('.cursor');
 const cursorFollower = document.querySelector('.cursor-follower');
 
@@ -39,7 +38,7 @@ document.addEventListener('mousemove', (e) => {
     }, 100);
 });
 
-// Cursor hover effects
+
 const hoverElements = document.querySelectorAll('a, button, .project__card');
 hoverElements.forEach(el => {
     el.addEventListener('mouseenter', () => {
@@ -67,7 +66,7 @@ if (navClose) {
     });
 }
 
-// Close menu when clicking on nav links
+
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('show-menu');
@@ -75,7 +74,7 @@ navLinks.forEach(link => {
 });
 
 
-// STICKY HEADER ON SCROLL
+
 const scrollHeader = () => {
     if (window.scrollY >= 50) {
         header.classList.add('scroll-header');
@@ -87,7 +86,7 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader);
 
 
-// ACTIVE LINK ON SCROLL
+
 const scrollActive = () => {
     const scrollY = window.pageYOffset;
 
@@ -110,7 +109,7 @@ const scrollActive = () => {
 window.addEventListener('scroll', scrollActive);
 
 
-// SMOOTH SCROLL WITH OFFSET FOR FIXED HEADER
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -133,7 +132,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// DARK/LIGHT MODE TOGGLE
+
 const currentTheme = localStorage.getItem('theme') || 'light';
 if (currentTheme === 'dark') {
     document.body.classList.add('dark-mode');
@@ -152,7 +151,7 @@ themeToggle.addEventListener('click', () => {
 });
 
 
-//Typing Animation
+
 const typingText = document.querySelector('.typing-text');
 const phrases = [
     'Web and AI/ML Developer',
@@ -193,7 +192,7 @@ function typeEffect() {
 setTimeout(typeEffect, 1000);
 
 
-// PROJECT
+
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         filterBtns.forEach(b => b.classList.remove('active'));
@@ -217,7 +216,7 @@ filterBtns.forEach(btn => {
 });
 
 
-// PROJECT IMAGES
+
 previewBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         const projectCard = btn.closest('.project__card');
@@ -249,7 +248,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 
-// SCROLL ANIMATIONS
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -267,7 +266,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// sections with fade-in class
+
 const fadeElements = document.querySelectorAll('.glass-card, .about__container, .projects__container');
 fadeElements.forEach(el => {
     el.classList.add('fade-in');
@@ -276,7 +275,7 @@ fadeElements.forEach(el => {
 observer.observe(document.querySelector('.skills'));
 
 
-//CARDS ANIMATION
+
 let skillsAnimated = false;
 
 function animateSkillCards() {
@@ -295,7 +294,7 @@ function animateSkillCards() {
 }
 
 
-// CONTACT FORM 
+
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -393,7 +392,7 @@ function hideMessage() {
 }
 
 
-// BACK TO TOP BUTTON
+
 const showBackToTop = () => {
     if (window.scrollY >= 400) {
         backToTop.classList.add('show');
@@ -412,7 +411,7 @@ backToTop.addEventListener('click', () => {
 });
 
 
-// SCROLLING EFFECT
+
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const parallaxElements = document.querySelectorAll('.hero__blob');
@@ -429,7 +428,12 @@ const downloadCV = document.querySelector('.download-cv');
 if (downloadCV) {
     downloadCV.addEventListener('click', (e) => {
         e.preventDefault();
-        alert('Resume download would start here. Please add your actual resume file to enable download.');
+        const link = document.createElement('a');
+        link.href = 'Vishal_Patel_Resume.pdf';
+        link.download = 'Vishal_Patel_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     });
 }
 
@@ -488,13 +492,12 @@ window.addEventListener('scroll', debouncedScrollActive);
 window.addEventListener('scroll', debouncedShowBackToTop);
 
 
-console.log('%c👋 Hello, Developer!', 'color: #6366f1; font-size: 24px; font-weight: bold;');
+console.log('%cHello, Developer!', 'color: #6366f1; font-size: 24px; font-weight: bold;');
 console.log('%cThanks for checking out the code! Feel free to reach out if you want to collaborate.', 'color: #64748b; font-size: 14px;');
-console.log('%c🚀 Built with HTML, CSS, and JavaScript', 'color: #8b5cf6; font-size: 12px;');
+console.log('%cBuilt with HTML, CSS, and JavaScript', 'color: #8b5cf6; font-size: 12px;');
 
 
-// INITIALIZATION
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Portfolio website loaded successfully! ✨');
+    console.log('Portfolio website loaded successfully!');
     document.body.classList.add('loaded');
 });

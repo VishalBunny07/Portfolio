@@ -9,6 +9,47 @@
     <title>Vishal Patel - Web and AI/ML Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+
+    <style>
+        .loading-screen { 
+         position: fixed; top: 0; left: 0; 
+         width: 100%; 
+         height: 100%; 
+         background: #ffffff; 
+         display: flex;
+         align-items: center; 
+         justify-content: center; 
+         z-index: 10000; 
+        }
+
+        .loader { 
+         width: 50px; 
+         height: 50px; 
+         border: 4px solid #f1f5f9; 
+         border-top-color: #6366f1; 
+         border-radius: 50%; 
+         animation: spin 1s linear infinite; 
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .header { 
+         position: fixed; top: 0; left: 0; 
+         width: 100%; 
+         background: rgba(255, 255, 255, 0.1); 
+         backdrop-filter: blur(10px); 
+         z-index: 1000; 
+        }
+
+        body.dark-mode .loading-screen { 
+            background: #0f172a; 
+        }
+
+        body.dark-mode .header { 
+            background: rgba(15, 23, 42, 0.7); 
+        }
+    </style>
+    
 </head>
 <body>
     <div class="cursor"></div>
@@ -105,7 +146,7 @@
                         <i class="fab fa-whatsapp"></i>
                     </a>
 
-                    <a href="https://discord.gg/43NquNYV" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Discord">
+                    <a href="https://discord.com/users/707523435890344007" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Discord">
                         <i class="fab fa-discord"></i>
                     </a>
                     
@@ -121,7 +162,7 @@
                         <path fill="currentColor" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.3C64.8,55.4,53.8,67,40.3,74.5C26.8,82,13.4,85.4,-0.5,86.3C-14.4,87.2,-28.8,85.6,-42.3,78.9C-55.8,72.2,-68.4,60.4,-76.8,46.1C-85.2,31.8,-89.4,15.9,-88.7,0.5C-88,-14.9,-82.4,-29.8,-74.3,-43.5C-66.2,-57.2,-55.6,-69.7,-42.4,-77.3C-29.2,-84.9,-14.6,-87.6,0.3,-88.1C15.2,-88.6,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
                     </svg>
                 </div>
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='300' height='300' fill='%236366f1'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='24' fill='white'%3EWelcome To My Portfolio%3C/text%3E%3C/svg%3E" alt="Welcome" class="hero__img">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='300' height='300' fill='%236366f1'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='24' fill='white'%3EWelcome To My Portfolio%3C/text%3E%3C/svg%3E" alt="Welcome" class="hero__img" loading="lazy">
             </div>
         </div>
         <div class="hero__scroll">
@@ -141,7 +182,7 @@
             <div class="about__container">
                 <div class="about__image">
                     <div class="about__img-wrapper glass-card">
-                        <a href="https://freeimage.host/"><img src="https://iili.io/KWBi0q7.png" alt="KWBi0q7.png" border="0"></a>
+                        <a href="https://freeimage.host/"><img src="https://iili.io/KWBi0q7.png" alt="KWBi0q7.png" border="0" loading="lazy"></a>
                     </div>
                 </div>
 
@@ -149,35 +190,16 @@
                     <div class="about__text glass-card">
                         <h3 class="about__subtitle">Full Stack Web Developer</h3>
                         <p class="about__description">
-                            With over 5 years of experience in web development, I specialize in creating dynamic, 
+                            In web development, I specialize in creating dynamic, 
                             responsive, and user-friendly applications. My passion lies in transforming complex 
                             problems into simple, beautiful, and intuitive designs.
                         </p>
                       <h3 class="about__subtitle">Aspiring AI/ML Engineer</h3>
                         <p class="about__description">
-                             Passionate about building intelligent systems and solving complex problems through machine learning. 
+                            Passionate about building intelligent systems and solving complex problems through machine learning. 
                             Currently developing my skills in Python, data analysis, and ML algorithms while eager to contribute 
                             to meaningful AI projects and grow within innovative tech teams.
                         </p>
-
-                        <div class="about__info">
-                            <div class="about__box">
-                                <i class="fas fa-award"></i>
-                                <h4>Experience</h4>
-                                <span>4+ Years</span>
-                            </div>
-                            <div class="about__box">
-                                <i class="fas fa-briefcase"></i>
-                                <h4>Projects</h4>
-                                <span>10+ Completed</span>
-                            </div>
-                            <div class="about__box">
-                                <i class="fas fa-headset"></i>
-                                <h4>Support</h4>
-                                <span>24/7 Available</span>
-                            </div>
-                        </div>
-
                         <a href="#" class="btn btn-primary download-cv">
                             <i class="fas fa-download"></i>
                             Download Resume
@@ -205,7 +227,7 @@
     
                 <article class="project__card glass-card" data-category="web">
                     <div class="project__image">
-                        <img src="https://raw.githubusercontent.com/VishalBunny07/breast-cancer-analysis/refs/heads/main/Data%20Analysis%20on%20Breast%20cancer/Charts%20and%20Graphs%20images/13.png" alt="Data Analysis" class="project__img">
+                        <img src="assets/Data Analysis.webp" alt="Data Analysis" class="project__img" loading="lazy">
                         <div class="project__overlay">
                             <button class="project__btn preview-btn" data-project="1">
                                 <i class="fas fa-eye"></i>
@@ -233,7 +255,7 @@
     
                 <article class="project__card glass-card" data-category="mobile">
                     <div class="project__image">
-                        <img src="https://private-user-images.githubusercontent.com/131268343/435354505-12577209-d2eb-4141-8c62-b87bb2f6bc42.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk0MTYyMjQsIm5iZiI6MTc1OTQxNTkyNCwicGF0aCI6Ii8xMzEyNjgzNDMvNDM1MzU0NTA1LTEyNTc3MjA5LWQyZWItNDE0MS04YzYyLWI4N2JiMmY2YmM0Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwMlQxNDM4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNDBmY2IzNGNiNTI4YzEyZmYzNmFjNTc0MjRhNTg3M2QzNDQ1NzM4YjA3NWQ4MWExYzEyMjE5ZWM1ZDY5Y2M5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.cubjwckEo4RgvHCxhyesgEXVvMT21Axi00R4EpQEM2Q" alt="Recipe App" class="project__img">
+                        <img src="assets/recipies.webp" alt="Recipe App" class="project__img" loading="lazy">
                         <div class="project__overlay">
                             <button class="project__btn preview-btn" data-project="2">
                                 <i class="fas fa-eye"></i>
@@ -259,7 +281,7 @@
     
                 <article class="project__card glass-card" data-category="web">
                     <div class="project__image">
-                        <img src="https://private-user-images.githubusercontent.com/131268343/497163736-6006087c-ae39-4280-8197-c75232dea47d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk0OTk4MDUsIm5iZiI6MTc1OTQ5OTUwNSwicGF0aCI6Ii8xMzEyNjgzNDMvNDk3MTYzNzM2LTYwMDYwODdjLWFlMzktNDI4MC04MTk3LWM3NTIzMmRlYTQ3ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwM1QxMzUxNDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mY2UwZjZiZjZiMzM1YzE2OTQwMjFiNTIyZDk2ZDk3MzAyNjI5ZTA0NzFjMWNlYTVhMmUxYjEzY2VmZmNkM2I2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.5Rt7Ws9iYdVHcKGHhPPcOmL6e8EK8nMPcTBf0pMi4GE" alt="Personality Traits" class="project__img">
+                        <img src="assets/Personality.webp" alt="Personality Traits" class="project__img" loading="lazy">
                         <div class="project__overlay">
                             <button class="project__btn preview-btn" data-project="3">
                                 <i class="fas fa-eye"></i>
@@ -288,7 +310,7 @@
     
                 <article class="project__card glass-card" data-category="design">
                     <div class="project__image">
-                        <img src="https://private-user-images.githubusercontent.com/131268343/497231864-08329111-7e23-4f70-81b3-2149e7c18bc8.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk1NjczMTgsIm5iZiI6MTc1OTU2NzAxOCwicGF0aCI6Ii8xMzEyNjgzNDMvNDk3MjMxODY0LTA4MzI5MTExLTdlMjMtNGY3MC04MWIzLTIxNDllN2MxOGJjOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwNFQwODM2NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZGE0N2RlOTI1YjU2M2RmZDIxNjBlYjU3YWQ2MWE0YTU4ODFkODRkNzY3OTYzMDA1NTBjYmFiODg0ZGI0NGVhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.38m7tB1tywmHFDEdhe3VXiGwMY2q0EuNbRZiWDBQ1JM" alt="Creative Portfolio" class="project__img">
+                        <img src="assets/portfolio.webp" alt="Creative Portfolio" class="project__img" loading="lazy">
                         <div class="project__overlay">
                             <button class="project__btn preview-btn" data-project="4">
                                 <i class="fas fa-eye"></i>
@@ -321,7 +343,7 @@
             <button class="lightbox__close">
                 <i class="fas fa-times"></i>
             </button>
-            <img src="" alt="Project preview" class="lightbox__img">
+            <img src="" alt="Project preview" class="lightbox__img" loading="lazy">
             <div class="lightbox__caption"></div>
         </div>
     </div>
@@ -515,7 +537,7 @@
                             <i class="fab fa-whatsapp"></i>
                         </a>
 
-                        <a href="https://discord.gg/43NquNYV" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Discord">
+                        <a href="https://discord.com/users/707523435890344007" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Discord">
                             <i class="fab fa-discord"></i>
                         </a>
                     
