@@ -423,20 +423,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-// DOWNLOAD RESUME
-const downloadCV = document.querySelector('.download-cv');
-if (downloadCV) {
-    downloadCV.addEventListener('click', (e) => {
-        e.preventDefault();
-        const link = document.createElement('a');
-        link.href = 'Vishal_Patel_Resume.pdf';
-        link.download = 'Vishal_Patel_Resume.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    });
-}
-
 
 // Keyboard navigation for mobile menu
 document.addEventListener('keydown', (e) => {
