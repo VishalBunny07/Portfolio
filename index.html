@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Web Developer Portfolio - Showcasing modern web development projects and skills">
-    <meta name="keywords" content="web developer, portfolio, frontend, backend, full stack">
-    <meta name="author" content="Your Name">
+    <meta name="description" content="Vishal Patel - Student Web & AI/ML Developer. Machine learning projects, Python data analysis, TensorFlow, and full-stack development portfolio.">
+    <link rel="canonical" href="https://vishalpatelportfolio.netlify.app">
+    <meta name="author" content="Vishal Patel">
+    <meta name="keywords" content="web developer, portfolio, frontend, backend, full stack, Machine learning, AI, projects, skills, HTML, CSS, JavaScript, Python, React, TensorFlow, AI development">
+    <meta name="google-site-verification" content="YYynE2AEGergK7oNkNz-PhlFSnjBoH-RApPVcjoyeFw" />
     <title>Vishal Patel - Web and AI/ML Developer Portfolio</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Vishal Patel - Student Web & AI/ML Developer">
+    <meta property="og:description" content="Student portfolio showcasing machine learning projects, Python development, and AI solutions. View my projects and skills.">
+    <meta property="og:image" content="https://vishalpatelportfolio.netlify.app/assets/profileimage.webp">
+    <meta property="og:url" content="https://vishalpatelportfolio.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vishal Patel Portfolio">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>🤖</text></svg>">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -52,6 +61,31 @@
             background: rgba(15, 23, 42, 0.7); 
         }
     </style>
+
+    <!-- Structured Data for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vishal Patel",
+        "description": "Student Web and AI/ML Developer specializing in machine learning, Python programming, and full-stack web development",
+        "url": "https://vishalpatelportfolio.netlify.app",
+        "knowsAbout": [
+        "Machine Learning",
+        "Python Programming", 
+        "Web Development",
+        "Data Analysis",
+        "Artificial Intelligence",
+        "TensorFlow",
+        "JavaScript",
+        "React"
+        ],
+        "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Student Developer"
+        }
+    }
+    </script>
     
 </head>
 <body>
@@ -185,7 +219,7 @@
             <div class="about__container">
                 <div class="about__image">
                     <div class="about__img-wrapper glass-card">
-                        <img src="assets/profile image.png" alt="Vishal" loading="lazy"></a>
+                        <img src="assets/profileimage.webp" alt="Vishal" loading="lazy"></a>
                     </div>
                 </div>
 
@@ -203,7 +237,7 @@
                             Currently developing my skills in Python, data analysis, and ML algorithms while eager to contribute 
                             to meaningful AI projects and grow within innovative tech teams.
                         </p>
-                        <a href="Vishal_Patel_Resume.pdf" download="Vishal_Patel_Resume.pdf" class="btn btn-primary download-cv">
+                        <a href="Vishal Patel Resume.pdf" download="Vishal_Patel_Resume.pdf" class="btn btn-primary download-cv">
                             <i class="fas fa-download"></i> Download Resume
                         </a>
 
@@ -222,7 +256,7 @@
             <div class="projects__filters">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
                 <button class="filter-btn" data-filter="web">Machine learning</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="mobile">Mobile/Desktop</button>
                 <button class="filter-btn" data-filter="design">Design</button>
             </div>
 
@@ -245,6 +279,7 @@
                             This repository holds a thorough project aimed at data analysis and data visualization with Python for Breast Cancer Analysis. It demonstrates methods and tools for data cleaning, data exploration, data analysis, and visualization to derive valuable insights.
                         </p>
                         <div class="project__tags">
+                            <span class="tag">Python</span>
                             <span class="tag">Jupyter Notebook</span>
                             <span class="tag">Pandas</span>
                             <span class="tag">Numpy</span>
@@ -253,6 +288,66 @@
                         </div>
                     </div>
                 </article>
+
+                 <article class="project__card glass-card" data-category="web">
+                    <div class="project__image">
+                        <img src="assets/Personality.webp" alt="Personality Traits" class="project__img" loading="lazy">
+                        <div class="project__overlay">
+                            <button class="project__btn preview-btn" data-project="3">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/VishalBunny07/Personality-Type-Predictor" class="project__btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Personality Type Predictor</h3>
+                        <p class="project__description">
+                            A machine learning web application that classifies personality types (Introvert/Extrovert/Ambivert) using Streamlit and trained classification models. Users input psychological trait scores to get instant personality predictions with confidence scores.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Jupyter Notebook</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Seaborn</span>
+                            <span class="tag">Scikit Learn</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project__card glass-card" data-category="web">
+                    <div class="project__image">
+                        <img src="assets/paws vs whiskers.webp" alt="paws vs whiskers" class="project__img" loading="lazy">
+                        <div class="project__overlay">
+                            <button class="project__btn preview-btn" data-project="3">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/VishalBunny07/paws-vs-whiskers" class="project__btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Paws vs Whiskers</h3>
+                        <p class="project__description">
+                            This project involved the end-to-end development of a deep learning model to classify images of cats and dogs. As a cornerstone computer vision task, it provided hands-on experience in building and managing a modern machine learning pipeline.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Keras</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Jupyter Notebook</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Numpy</span>
+                            <span class="tag">Image classification</span>
+                        </div>
+                    </div>
+                </article>
+
 
     
                 <article class="project__card glass-card" data-category="mobile">
@@ -279,37 +374,34 @@
                         </div>
                     </div>
                 </article>
-
-    
-                <article class="project__card glass-card" data-category="web">
+                
+                <article class="project__card glass-card" data-category="mobile">
                     <div class="project__image">
-                        <img src="assets/Personality.webp" alt="Personality Traits" class="project__img" loading="lazy">
+                        <img src="assets/routinemate.webp" alt="Recipe App" class="project__img" loading="lazy">
                         <div class="project__overlay">
-                            <button class="project__btn preview-btn" data-project="3">
+                            <button class="project__btn preview-btn" data-project="2">
                                 <i class="fas fa-eye"></i>
                             </button>
-                            <a href="https://github.com/VishalBunny07/Personality-Type-Predictor" class="project__btn" target="_blank">
+                            <a href="https://github.com/VishalBunny07/RoutineMate" class="project__btn" target="_blank">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project__content">
-                        <h3 class="project__title">Personality Type Predictor</h3>
+                        <h3 class="project__title">Routine Mate</h3>
                         <p class="project__description">
-                            A machine learning web application that classifies personality types (Introvert/Extrovert/Ambivert) using Streamlit and trained classification models. Users input psychological trait scores to get instant personality predictions with confidence scores.
+                           An intuitive desktop assistant that automates daily routines and reminders to boost productivity and maintain healthy habits.Your personal routine manager - automating daily schedules with smart reminders and productivity tracking.
                         </p>
                         <div class="project__tags">
-                            <span class="tag">python</span>
-                            <span class="tag">Jupyter Notebook</span>
-                            <span class="tag">Matplotlib</span>
-                            <span class="tag">Seaborn</span>
-                            <span class="tag">Scikit Learn</span>
-                            <span class="tag">Streamlit</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Tkinter</span>
+                            <span class="tag">Desktop App</span>
+                            <span class="tag">productivity</span>
+                            <span class="tag">Automation</span>
                         </div>
                     </div>
                 </article>
 
-    
                 <article class="project__card glass-card" data-category="design">
                     <div class="project__image">
                         <img src="assets/portfolio.webp" alt="Creative Portfolio" class="project__img" loading="lazy">
@@ -442,7 +534,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <h3>Location</h3>
                         <p>Rajkot,Gujarat,India</p>
-                        <a href="#" class="contact__button">
+                        <a href="https://www.google.com/maps/place/Rajkot,+Gujarat/@22.2734869,70.8212963,12z/data=!3m1!4b1!4m6!3m5!1s0x3959c98ac71cdf0f:0x76dd15cfbe93ad3b!8m2!3d22.3038945!4d70.8021599!16zL20vMDNnbWxx?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="contact__button">
                             View Map <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -457,7 +549,10 @@
                     </div>
                 </div>
 
-                <form class="contact__form glass-card" id="contact-form" netlify name="contact">
+                <form class="contact__form glass-card" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input type="hidden" name="bot-field">
+                    
                     <div class="form__group">
                         <label for="name" class="form__label">Full Name *</label>
                         <input type="text" id="name" name="name" class="form__input" placeholder="Enter your name" required>

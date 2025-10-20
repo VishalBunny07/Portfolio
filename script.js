@@ -295,63 +295,7 @@ function animateSkillCards() {
 
 
 
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        clearErrors();
-    
-        const formData = {
-            name: document.getElementById('name').value.trim(),
-            email: document.getElementById('email').value.trim(),
-            subject: document.getElementById('subject').value.trim(),
-            message: document.getElementById('message').value.trim()
-        };
-    
-        let isValid = true;
-        
-        if (formData.name.length < 2) {
-            showError('name', 'Name must be at least 2 characters');
-            isValid = false;
-        }
-        
-        if (!isValidEmail(formData.email)) {
-            showError('email', 'Please enter a valid email address');
-            isValid = false;
-        }
-        
-        if (formData.subject.length < 3) {
-            showError('subject', 'Subject must be at least 3 characters');
-            isValid = false;
-        }
-        
-        if (formData.message.length < 10) {
-            showError('message', 'Message must be at least 10 characters');
-            isValid = false;
-        }
-        
-        if (!isValid) return;
-        const btnText = contactForm.querySelector('.btn__text');
-        const btnLoader = contactForm.querySelector('.btn__loader');
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        
-        btnText.style.display = 'none';
-        btnLoader.style.display = 'inline-block';
-        submitBtn.disabled = true;
-        
 
-        setTimeout(() => {
-            btnText.style.display = 'inline';
-            btnLoader.style.display = 'none';
-            submitBtn.disabled = false;
-            showMessage('Thank you! Your message has been sent successfully.', 'success');
-            contactForm.reset();
-        
-            setTimeout(() => {
-                hideMessage();
-            }, 5000);
-        }, 2000);
-    });
-}
 
 function showError(fieldName, message) {
     const field = document.getElementById(fieldName);
